@@ -25,107 +25,138 @@ const NavigationItems = [
     children: [
       {
         id: 'default',
-        title: 'Default',
+        title: 'Home',
         type: 'item',
         classes: 'nav-item',
         url: '/default',
-        icon: 'ti ti-dashboard',
         breadcrumbs: false
       }
     ]
   },
   {
     id: 'page',
-    title: 'Pages',
+    title: 'Authentication',
     type: 'group',
     icon: 'icon-navigation',
     children: [
       {
-        id: 'Authentication',
-        title: 'Authentication',
-        type: 'collapse',
-        icon: 'ti ti-key',
-        children: [
-          {
-            id: 'login',
-            title: 'Login',
-            type: 'item',
-            url: '/guest/login',
-            target: true,
-            breadcrumbs: false
-          },
-          {
-            id: 'register',
-            title: 'Register',
-            type: 'item',
-            url: '/guest/register',
-            target: true,
-            breadcrumbs: false
-          }
-        ]
+        id: 'login',
+        title: 'Login',
+        type: 'item',
+        classes: 'nav-item',
+        url: '/guest/login',
+        breadcrumbs: false
+      },
+      {
+        id: 'register',
+        title: 'Register',
+        type: 'item',
+        classes: 'nav-item',
+        url: '/guest/register',
+        breadcrumbs: false
       }
     ]
   },
   {
     id: 'elements',
-    title: 'Elements',
+    title: 'Pages',
     type: 'group',
     icon: 'icon-navigation',
     children: [
       {
         id: 'typography',
-        title: 'Typography',
+        title: 'Customers',
         type: 'item',
         classes: 'nav-item',
         url: '/typography',
-        icon: 'ti ti-typography'
       },
       {
         id: 'color',
-        title: 'Colors',
+        title: 'Suppliers',
         type: 'item',
         classes: 'nav-item',
         url: '/color',
-        icon: 'ti ti-brush'
       },
       {
-        id: 'tabler',
-        title: 'Tabler',
+        id: 'color',
+        title: 'Staff',
         type: 'item',
         classes: 'nav-item',
-        url: 'https://tabler-icons.io/',
-        icon: 'ti ti-plant-2',
-        target: true,
-        external: true
-      }
+        url: '/color',
+      },
+      {
+        id: 'color',
+        title: 'Taxes',
+        type: 'item',
+        classes: 'nav-item',
+        url: '/color',
+      },
+      {
+        id: 'color',
+        title: 'Upload',
+        type: 'item',
+        classes: 'nav-item',
+        url: '/color',
+      },
+      {
+        id: 'color',
+        title: 'Inbox',
+        type: 'item',
+        classes: 'nav-item',
+        url: '/color',
+      },
+      {
+        id: 'color',
+        title: 'Fins',
+        type: 'item',
+        classes: 'nav-item',
+        url: '/color',
+      },
+      {
+        id: 'color',
+        title: 'Setup',
+        type: 'item',
+        classes: 'nav-item',
+        url: '/color',
+      },
+      // {
+      //   id: 'tabler',
+      //   title: 'Tabler',
+      //   type: 'item',
+      //   classes: 'nav-item',
+      //   url: 'https://tabler-icons.io/',
+      //   icon: 'ti ti-plant-2',
+      //   target: true,
+      //   external: true
+      // }
     ]
   },
-  {
-    id: 'other',
-    title: 'Other',
-    type: 'group',
-    icon: 'icon-navigation',
-    children: [
-      {
-        id: 'sample-page',
-        title: 'Sample Page',
-        type: 'item',
-        url: '/sample-page',
-        classes: 'nav-item',
-        icon: 'ti ti-brand-chrome'
-      },
-      {
-        id: 'document',
-        title: 'Document',
-        type: 'item',
-        classes: 'nav-item',
-        url: 'https://codedthemes.gitbook.io/berry-angular/',
-        icon: 'ti ti-vocabulary',
-        target: true,
-        external: true
-      }
-    ]
-  }
+  // {
+  //   id: 'other',
+  //   title: 'Other',
+  //   type: 'group',
+  //   icon: 'icon-navigation',
+  //   children: [
+  //     {
+  //       id: 'sample-page',
+  //       title: 'Sample Page',
+  //       type: 'item',
+  //       url: '/sample-page',
+  //       classes: 'nav-item',
+  //       icon: 'ti ti-brand-chrome'
+  //     },
+  //     {
+  //       id: 'document',
+  //       title: 'Document',
+  //       type: 'item',
+  //       classes: 'nav-item',
+  //       url: 'https://codedthemes.gitbook.io/berry-angular/',
+  //       icon: 'ti ti-vocabulary',
+  //       target: true,
+  //       external: true
+  //     }
+  //   ]
+  // }
 ];
 
 @Injectable()
